@@ -1,0 +1,69 @@
+.checkborder {
+    border: 1px solid black;
+}
+
+.basicstyle {
+    padding: 10px;
+    color: mediumslateblue;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-align: left;
+}
+
+.offcanvas {
+    width: 600px;
+}
+
+.positioning {
+    position: absolute;
+    bottom: .8rem;
+    right: 1.5rem;
+}
+
+table {
+    font-family: 'Poppins';
+}
+
+td .material-icons {
+    font-size: medium;
+}
+
+.editBut::after {
+    content: "EDIT";
+}
+
+.deleteBut::after {
+    content: "DELETE";
+}
+
+input {
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    table,
+    .btn,
+    .material-icons,.editBut,.deleteBut {
+        font-size: 10px;
+    }
+
+    .editBut::after {
+        content: " ";
+    }
+
+    .deleteBut::after {
+        content: " ";
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    table,
+    .btn,
+    .material-icons,.editBut,.deleteBut {
+        font-size: 14px;
+    }
+}
